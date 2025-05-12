@@ -1,0 +1,60 @@
+
+\documentclass{jornada} % Classe do documento
+
+\usepackage{enumitem,lipsum}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\titulo{Explicación de Comprensión de Listas}
+\author[1*]{Pedro Felipe Gómez Bonilla} % Usar * para identificar o autor correspondente
+\affil[1]{Campuslands}
+\email{pedrogomez.campuslands@gmail.com} % colocar o e-amil do autor correspondente
+\GrupoTematico{Grupo S2 - Campuslands} % Inserir o grupo temático
+
+%------------------------------------------------------
+% INÍCIO DO DOCUMENTO                                           %------------------------------------------------------        
+\begin{document}
+\pretext % não apague esta linha
+
+% INÍCIO DA PARTE TEXTUAL                                           
+
+\section{Introducción}
+
+Cuando hablamos de comprensión de listas hacemos referencia a crear una lista de elementos con solamente una línea de código. Esto se puede evidenciar de la siguiente manera:
+\begin{lstlisting}
+// main.py
+lista=[]
+lista = [i**2 for i in range(5)]
+\end{lstlisting}
+\begin{subequations}
+
+\end{subequations}
+
+Aún asi , el ejercicio nos solicita los siguientes requerimientos: Generar diferentes tripletas conformadas como \([i,j,k]\) , las cuales van a asumir el valor de \(x\) , \(y\), y \(z\) ingresados por el usuario respectivamente. Dichas asignaciones deben cumplir con las siguientes condicionales: \(x\) , \(y\), y \(z\) deben ser menores o iguales a \(i\),\(j\) y \(k\) respectivamente, al igual que deben ser menor o igual a los mismos(\(i\leq x\),\(j\leq y\),\(k\leq z\)). También la sumatoria de \(i+j+k\) debe ser diferente a un numero dado por el usuario, el cual llamaremos \(n\).
+
+Vamos a empezar a hacer un ejemplo donde \(x=1\), \(y=1\),\(z=2\) y \(n=3\). En otras palabras, generaremos tipletas del formato \([i,j,k]\), donde iteraremos entre \(x\), \(y\) y \(z\) , en las cuales su sumatoria sea diferente a \(n\), el cual tiene un valor de \(3\). Dichas tripletas la almacenaremos en una lista vacia \([ ]\), la cual imprimiremos al final de ejercicio.
+
+Para ello vamos a empezar creando una tripleta con los valores de \([i,j,k]\) vacios, en otras palabras, debería quedar así: \([0,0,0]\). Luego empezaremos con el primer término \(x\), el cual utilizaremos en la posición \(k\), cumpliendo la condición anteriormente mencionada. En este caso \(k\) será igual al valor de 1 y \(z\)
+
+\end{document}
