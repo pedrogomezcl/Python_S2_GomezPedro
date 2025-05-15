@@ -1,40 +1,14 @@
 # ##########################
-# #### Clase Dia 8 ######
+# #### Clase Dia 9 ######
 # ##########################
-from funcionesLista import *
-diccionarioRobusto={
-    "id":1,
-    "nombre":"Pedro",
-    "apellido":"Gómez",
-    "edad":25,
-    "telefonos":[
-        {
-            "codigo":57,
-            "numero":3023019865,
-            "tipo":"trabajo"
-        },
-        {
-            "codigo":1,
-            "numero":3983054625,
-            "tipo":"personal"
-        }
-    ]
-}
+from funciones.funcionesLista import *
+from funciones.funcionesGGDD import *
 
-diccionarioRobusto2={
-    "id":2,
-    "nombre":"Corpus",
-    "apellido":"Bejarano",
-    "edad":27,
-    "telefonos":[{"codigo":58,"numero":2323057565,"tipo":"trabajo"}
-                 ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
-}
-listaRobusta=[]
-listaRobusta.append(diccionarioRobusto)
-listaRobusta.append(diccionarioRobusto2)
-userCant = 2
+listaRobusta = abrirJSON()
 booleanito = True
+
 while(booleanito):
+    listaRobusta=abrirJSON()
     #print(listaRobusta)
     print("#################")
     print("#### Librería de personas ####")
@@ -51,7 +25,7 @@ while(booleanito):
         print("#################")
         print("#### Crear Persona ####")
         print("#################")
-        # receceocuón de dati¿os de usuarios
+        # Obtener datos del nuevo usuario
         nombre = input('Por favor, ingrese el nombre: ')
         apellido = input('Por favor, ingrese el apellido: ')
         edad = int(input('Por favor, ingrese el edad: '))
@@ -74,8 +48,9 @@ while(booleanito):
             }
             diccionarioUsuario['telefonos'].append(data_telefono)
         listaRobusta.append(diccionarioUsuario)
+        guardarJSON(listaRobusta)
         print(' ')
-        userCant += 1 
+        
         # userCant = userCant + 1
         print(f'Persona {nombre} fue creada exitosamente.')
     elif(opcionUsuario==2):
@@ -118,6 +93,7 @@ while(booleanito):
                 listaTelefonosTemporal.append(diccionarioTemporal)
         diccionarioAgregar={"id":listaRobusta[opcionIndividual-1]["id"],"nombre":nombreTemporal,"apellido":apellidoTemporal,"edad":edadTemporal,"telefonos":listaTelefonosTemporal}
         listaRobusta[opcionIndividual-1]=diccionarioAgregar
+        guardarJSON(listaRobusta)
     elif(opcionUsuario==5):
         print("#################")
         print("#### Eliminar Persona Individual ####")
@@ -125,9 +101,12 @@ while(booleanito):
         recorrerLista(listaRobusta)
         opcionIndividual = int(input("Por favor ingresar el numero de la persona a eliminar:"))
         mostrarUna(listaRobusta,opcionIndividual)
-        opcionIndividual = int(input("¿Estás seguro de eliminar a esta persona? (1.Si,2.No):"))
-        if (opcionIndividual==1):
-            listaRobusta.pop(opcionIndividual-1)
+        opcionIndividual2 = int(input("¿Estás seguro de eliminar a esta persona? (1.Si,2.No):"))
+        if (opcionIndividual2==1):
+            temporal= listaRobusta.pop(opcionIndividual-1)
+            logsJSON(temporal)
+            #print(temporal)
+            guardarJSON(listaRobusta)
             print("Usuario eliminado!")
         else:
             print("Gracias por confirmar!")

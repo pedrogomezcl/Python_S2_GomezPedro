@@ -1,0 +1,191 @@
+[
+    {
+        "id": 4,
+        "nombre": "Andr\u00e9s",
+        "apellido": "Rojas",
+        "edad": 22,
+        "telefonos": [
+            {
+                "codigo": 57,
+                "numero": 3001122334,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Mar\u00eda",
+        "apellido": "Fern\u00e1ndez",
+        "edad": 35,
+        "telefonos": [
+            {
+                "codigo": 1,
+                "numero": 2025550123,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 1,
+                "numero": 2025550456,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Jorge",
+        "apellido": "Ram\u00edrez",
+        "edad": 28,
+        "telefonos": [
+            {
+                "codigo": 55,
+                "numero": 5512345678,
+                "tipo": "trabajo"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Luc\u00eda",
+        "apellido": "Morales",
+        "edad": 31,
+        "telefonos": [
+            {
+                "codigo": 56,
+                "numero": 912345678,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Carlos",
+        "apellido": "P\u00e9rez",
+        "edad": 26,
+        "telefonos": [
+            {
+                "codigo": 57,
+                "numero": 3217654321,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 57,
+                "numero": 3011122334,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Ana",
+        "apellido": "L\u00f3pez",
+        "edad": 29,
+        "telefonos": [
+            {
+                "codigo": 44,
+                "numero": 7441234567,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "David",
+        "apellido": "C\u00e1rdenas",
+        "edad": 33,
+        "telefonos": [
+            {
+                "codigo": 51,
+                "numero": 912876543,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 51,
+                "numero": 987654321,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Isabel",
+        "apellido": "Delgado",
+        "edad": 24,
+        "telefonos": [
+            {
+                "codigo": 60,
+                "numero": 600123456,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Mauricio",
+        "apellido": "Vega",
+        "edad": 37,
+        "telefonos": [
+            {
+                "codigo": 57,
+                "numero": 3209988776,
+                "tipo": "trabajo"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Patricia",
+        "apellido": "Guzm\u00e1n",
+        "edad": 40,
+        "telefonos": [
+            {
+                "codigo": 34,
+                "numero": 677889900,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "nombre": "Ricardo",
+        "apellido": "Navarro",
+        "edad": 32,
+        "telefonos": [
+            {
+                "codigo": 1,
+                "numero": 2125551234,
+                "tipo": "trabajo"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "nombre": "Valentina",
+        "apellido": "Reyes",
+        "edad": 21,
+        "telefonos": [
+            {
+                "codigo": 57,
+                "numero": 3004567890,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "nombre": "Esteban",
+        "apellido": "Casta\u00f1o",
+        "edad": 38,
+        "telefonos": [
+            {
+                "codigo": 54,
+                "numero": 1145678901,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 54,
+                "numero": 1141234567,
+                "tipo": "personal"
+            }
+        ]
+    }
+]

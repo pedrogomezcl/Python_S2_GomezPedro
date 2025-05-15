@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pedro",
+        "apellido": "G\u00f3mez",
+        "edad": 25,
+        "telefonos": [
+            {
+                "codigo": 57,
+                "numero": 3023019865,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 1,
+                "numero": 3983054625,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Corpus",
+        "apellido": "Bejarano",
+        "edad": 27,
+        "telefonos": [
+            {
+                "codigo": 58,
+                "numero": 2323057565,
+                "tipo": "trabajo"
+            },
+            {
+                "codigo": 22,
+                "numero": 6857493658,
+                "tipo": "personal"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Laura",
+        "apellido": "Mart\u00ednez",
+        "edad": 30,
+        "telefonos": [
+            {
+                "codigo": 34,
+                "numero": 612345678,
+                "tipo": "personal"
+            },
+            {
+                "codigo": 34,
+                "numero": 698765432,
+                "tipo": "trabajo"
+            }
+        ]
+    }
+]
