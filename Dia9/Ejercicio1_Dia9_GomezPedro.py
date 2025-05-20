@@ -9,6 +9,7 @@ booleanito = True
 
 while(booleanito):
     listaRobusta=abrirJSON()
+    print(type(listaRobusta))
     #print(listaRobusta)
     print("#################")
     print("#### Librería de personas ####")
